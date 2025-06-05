@@ -12,7 +12,7 @@ let dataString = "";
 
 // HTMLをそのまま返す（テンプレート使わない）
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, "", "index.html"));
+  res.sendFile(path.join(__dirname, "browse", "index.html"));
 });
 
 app.post('/', (req, res) => {
