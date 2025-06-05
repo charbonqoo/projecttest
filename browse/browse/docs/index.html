@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>空き教室確認アプリ</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    select { margin-right: 10px; }
+    ul { list-style: none; padding-left: 0; }
+    li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <h1 id="title">空き教室一覧</h1>
+
+  <div>
+    <label for="weekday">曜日:</label>
+    <select id="weekday">
+      <option value="月">月</option>
+      <option value="火">火</option>
+      <option value="水">水</option>
+      <option value="木">木</option>
+      <option value="金">金</option>
+      <option value="土">土</option>
+    </select>
+
+    <label for="period">時限:</label>
+    <select id="period">
+      <option value="1">1限</option>
+      <option value="2">2限</option>
+      <option value="3">3限</option>
+      <option value="4">4限</option>
+      <option value="5">5限</option>
+    </select>
+
+    <label for="building">建物:</label>
+    <select id="building">
+      <option value="">すべて</option>
+      <option value="1号館">1号館</option>
+      <option value="2号館">2号館</option>
+      <option value="3号館">3号館</option>
+    </select>
+
+    <button onclick="fetchByFilter()">検索</button>
+  </div>
+
+  <ul id="classroom-list"></ul>
+
+  <script>
+    async function fetchByFilter() {
+      const weekday = document.getElementById("weekday").value;
+      const period = document.getElementById("period").value;
+      const building = document.getElementById("building").value;
+
+      const url = new URL("/api/classrooms/available", window.location.origin);
+      url.searchParams.append("weekday", weekday);
+      url.searchParams.append("period", period);
+      if (building) url.searchParams.append("building", building);
+
+      const res = await fetch(url);
+      const data = await res.json();
+
+      document.getElementById("title").textContent = `${weekday}曜 ${period}限 の空き教室`;
+      displayResults(data.results);
+    }
+
+    async function fetchCurrent() {
+      const res = await fetch("/api/classrooms/available/now");
+      if (res.status === 204) {
+        document.getElementById("title").textContent = "授業時間外です";
+        document.getElementById("classroom-list").innerHTML = "";
+        return;
+      }
+      const data = await res.json();
+      document.getElementById("weekday").value = data.weekday;
+      document.getElementById("period").value = data.period;
+      document.getElementById("building").value = "";
+      document.getElementById("title").textContent = `${data.weekday}曜 ${data.period}限 の空き教室`;
+      displayResults(data.results);
+    }
+
+    function displayResults(results) {
+      const list = document.getElementById("classroom-list");
+      list.innerHTML = "";
+
+      if (results.length === 0) {
+        list.innerHTML = "<li>空き教室はありません</li>";
+        return;
+      }
+
+      results.forEach(room => {
+        const item = document.createElement("li");
+        item.textContent = `${room.name}（${room.building}, 定員 ${room.capacity}人）`;
+        list.appendChild(item);
+      });
+    }
+
+    // ページロード時に現在の空き教室を表示
+    fetchCurrent();
+  </script>
+</body>
+</html>
