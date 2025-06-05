@@ -1,0 +1,23 @@
+{
+  "name": "classrooms",
+  "version": "1.0.0",
+  "description": "Node.js on Docker with Express and EJS",
+  "author": "RYO MARUYAMA",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
