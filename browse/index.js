@@ -2,6 +2,12 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const cors = require("cors");
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
+import timezone from "dayjs/plugin/timezone";
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 const app = express();
 const PORT = 3000;
@@ -30,11 +36,11 @@ function toMinutes(timeStr) {
 
 // 現在の曜日と時限を取得
 function getCurrentWeekdayAndPeriod() {
-  const now = new Date();
-  const day = now.getDay(); // 0=日, 1=月, ..., 6=土
+  const now = dayjs().tz("Asia/Tokyo");
+  const day = now.day(); // 0=日, 1=月, ..., 6=土
   const weekdayMap = ["日", "月", "火", "水", "木", "金", "土"];
   let weekday = weekdayMap[day];
-  let minutesNow = now.getHours() * 60 + now.getMinutes();
+  let minutesNow = now.hour() * 60 + now.minutes();
 
   if (weekday === "日") {
     // 日曜は翌日のデータ（=月曜）を表示
