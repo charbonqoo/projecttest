@@ -1,14 +1,2554 @@
 [
-  { 
-    "id": "101", 
-    "name": "101教室", 
-    "capacity": 30, 
-    "building": "1号館" 
-},
-  { 
-    "id": "102", 
-    "name": "102教室", 
-    "capacity": 40, 
-    "building": "1号館" 
-}
+  {
+    "id": 1,
+    "name": "CALL教室A",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 2,
+    "name": "CALL教室B",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 3,
+    "name": "CALL教室D",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 4,
+    "name": "CALL実習室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 5,
+    "name": "CALL教室C",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 6,
+    "name": "ライブラリー",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 7,
+    "name": "録音室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 8,
+    "name": "ストックルーム",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 9,
+    "name": "機械室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 10,
+    "name": "考古学実習室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 11,
+    "name": "考古学資料室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 12,
+    "name": "地理実習室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 13,
+    "name": "地理学実験室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 14,
+    "name": "自然科学教育研究室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 15,
+    "name": "ラボ1",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 16,
+    "name": "ラボ2",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 17,
+    "name": "118教室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 18,
+    "name": "117教室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 19,
+    "name": "端末室4",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 20,
+    "name": "端末室3",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 21,
+    "name": "プリンタ室1",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 22,
+    "name": "端末室6",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 23,
+    "name": "端末室5",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 24,
+    "name": "印刷室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 25,
+    "name": "プリンタ室2",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 26,
+    "name": "114教室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 27,
+    "name": "125教室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 28,
+    "name": "124教室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 29,
+    "name": "マルチメディア実習室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 30,
+    "name": "121教室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 31,
+    "name": "122教室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 32,
+    "name": "123教室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 33,
+    "name": "相談室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 34,
+    "name": "ネットワーク実習室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 35,
+    "name": "第6会議室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 36,
+    "name": "談話室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 37,
+    "name": "132教室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 38,
+    "name": "情報科学研究所",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 39,
+    "name": "ワーキングスペース",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 40,
+    "name": "1307研究室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 41,
+    "name": "131教室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 42,
+    "name": "133教室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 43,
+    "name": "プレゼンテーションスペース",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 44,
+    "name": "機械室",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 45,
+    "name": "ディスカッションスペース2",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 46,
+    "name": "ディスカッションスペース1",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 47,
+    "name": "ユーザテストルーム",
+    "building": "1号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 48,
+    "name": "2号館",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 49,
+    "name": "アカデミーモール1",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 50,
+    "name": "博物館実習室準備室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 51,
+    "name": "博物館実習室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 52,
+    "name": "展示実習室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 53,
+    "name": "調整室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 54,
+    "name": "収録スタジオ",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 55,
+    "name": "アカデミーモール2",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 56,
+    "name": "史学古文書調査実習室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 57,
+    "name": "222教室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 58,
+    "name": "223教室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 59,
+    "name": "224教室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 60,
+    "name": "227教室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 61,
+    "name": "226教室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 62,
+    "name": "225教室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 63,
+    "name": "221教室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 64,
+    "name": "博士後期課程院生自習室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 65,
+    "name": "地図資料室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 66,
+    "name": "地理学空間情報処理室",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 67,
+    "name": "アカデミーモール3",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 68,
+    "name": "アカデミーモール4",
+    "building": "2号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 69,
+    "name": "3号館",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 70,
+    "name": "社会知性開発研究センター5",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 71,
+    "name": "社会知性開発研究センター4",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 72,
+    "name": "社会知性開発研究センター3",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 73,
+    "name": "社会知性開発研究センター1",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 74,
+    "name": "社会知性開発研究センター2",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 75,
+    "name": "社会知性開発研究センター事務室",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 76,
+    "name": "学友会室",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 77,
+    "name": "335教室",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 78,
+    "name": "334教室",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 79,
+    "name": "333教室",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 80,
+    "name": "331教室",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 81,
+    "name": "332",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 82,
+    "name": "336教室",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 83,
+    "name": "337教室",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 84,
+    "name": "338教室",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 85,
+    "name": "339教室",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 86,
+    "name": "蒼翼の間",
+    "building": "3号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 87,
+    "name": "4号館",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 88,
+    "name": "410教室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 89,
+    "name": "キャンパスハラスメント対策室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 90,
+    "name": "障がい学生支援室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 91,
+    "name": "420",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 92,
+    "name": "421教室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 93,
+    "name": "422教室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 94,
+    "name": "423教室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 95,
+    "name": "424教室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 96,
+    "name": "429教室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 97,
+    "name": "428教室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 98,
+    "name": "427教室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 99,
+    "name": "426教室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 100,
+    "name": "425教室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 101,
+    "name": "応接室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 102,
+    "name": "社会学パソコン室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 103,
+    "name": "社会調査実習室3",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 104,
+    "name": "社会調査実習室2",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 105,
+    "name": "総合情報資料室(映像分析室)",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 106,
+    "name": "共同編集室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 107,
+    "name": "社会調査実習室1",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 108,
+    "name": "カンファレンスルーム",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 109,
+    "name": "プレイルーム1",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 110,
+    "name": "ゼミ44A",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 111,
+    "name": "プレイルーム2",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 112,
+    "name": "行動観察室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 113,
+    "name": "C1実習室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 114,
+    "name": "B2実験室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 115,
+    "name": "B1実験室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 116,
+    "name": "A2実験室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 117,
+    "name": "A1実験室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 118,
+    "name": "心理学パソコン室2",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 119,
+    "name": "ゼミ44B",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 120,
+    "name": "UNIX室コンピューター室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 121,
+    "name": "E1実習室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 122,
+    "name": "D1実習室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 123,
+    "name": "脳波室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 124,
+    "name": "脳波実験準備室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 125,
+    "name": "心理学パソコン室1",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 126,
+    "name": "演習室7",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 127,
+    "name": "演習室11",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 128,
+    "name": "社会学調査実習室6",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 129,
+    "name": "演習室9",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 130,
+    "name": "演習室8",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 131,
+    "name": "社会学調査実習室5",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 132,
+    "name": "社会学調査実習室4",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 133,
+    "name": "演習室2",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 134,
+    "name": "演習室1",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 135,
+    "name": "地理学調査実習室",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 136,
+    "name": "研究室8",
+    "building": "4号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 137,
+    "name": "511教室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 138,
+    "name": "自然科学実験室1",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 139,
+    "name": "自然科学実験室2",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 140,
+    "name": "生命科学実験室1",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 141,
+    "name": "生命科学実験室3",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 142,
+    "name": "生命科学実験室2",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 143,
+    "name": "生理実験室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 144,
+    "name": "体力測定室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 145,
+    "name": "社会体育研究室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 146,
+    "name": "体育研究室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 147,
+    "name": "体育実験実習室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 148,
+    "name": "522教室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 149,
+    "name": "528教室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 150,
+    "name": "527教室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 151,
+    "name": "526教室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 152,
+    "name": "525教室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 153,
+    "name": "521教室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 154,
+    "name": "524教室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 155,
+    "name": "523教室",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 156,
+    "name": "ゼミ56",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 157,
+    "name": "ゼミ55",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 158,
+    "name": "ゼミ54",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 159,
+    "name": "ゼミ53",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 160,
+    "name": "ゼミ52",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 161,
+    "name": "ゼミ51",
+    "building": "5号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 162,
+    "name": "702教室",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 163,
+    "name": "701教室",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 164,
+    "name": "713教室",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 165,
+    "name": "712教室",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 166,
+    "name": "711教室",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 167,
+    "name": "714教室",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 168,
+    "name": "723教室",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 169,
+    "name": "722教室",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 170,
+    "name": "721教室",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 171,
+    "name": "725教室",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 172,
+    "name": "724",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 173,
+    "name": "ゼミ75",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 174,
+    "name": "ゼミ74",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 175,
+    "name": "ゼミ73",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 176,
+    "name": "ゼミ72",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 177,
+    "name": "ゼミ71",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 178,
+    "name": "ゼミ70",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 179,
+    "name": "ゼミ79",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 180,
+    "name": "ゼミ78",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 181,
+    "name": "ゼミ77",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 182,
+    "name": "ゼミ76",
+    "building": "7号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 183,
+    "name": "811教室",
+    "building": "8号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 184,
+    "name": "812教室",
+    "building": "8号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 185,
+    "name": "813教室",
+    "building": "8号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 186,
+    "name": "814教室",
+    "building": "8号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 187,
+    "name": "821教室",
+    "building": "8号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 188,
+    "name": "822教室",
+    "building": "8号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 189,
+    "name": "823教室",
+    "building": "8号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 190,
+    "name": "824教室",
+    "building": "8号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 191,
+    "name": "会議室92F",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 192,
+    "name": "会議室92C",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 193,
+    "name": "会議室92B",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 194,
+    "name": "会議室92A",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 195,
+    "name": "会議室92D",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 196,
+    "name": "会議室92E",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 197,
+    "name": "作業室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 198,
+    "name": "端末室A",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 199,
+    "name": "資料室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 200,
+    "name": "端末室B",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 201,
+    "name": "端末室C",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 202,
+    "name": "端末室D",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 203,
+    "name": "端末室F",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 204,
+    "name": "端末室E",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 205,
+    "name": "ネットワーク室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 206,
+    "name": "システム開発室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 207,
+    "name": "共同実習室B",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 208,
+    "name": "共同実習室A",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 209,
+    "name": "ゼミ95D",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 210,
+    "name": "ゼミ95E",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 211,
+    "name": "ゼミ95F",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 212,
+    "name": "ゼミ95G",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 213,
+    "name": "ゼミ95H",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 214,
+    "name": "ゼミ95I",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 215,
+    "name": "ゼミ95J",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 216,
+    "name": "ゼミ95A",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 217,
+    "name": "ゼミ95B",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 218,
+    "name": "ゼミ95C",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 219,
+    "name": "国際交流センター",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 220,
+    "name": "多目的会議室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 221,
+    "name": "会議室M969",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 222,
+    "name": "961教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 223,
+    "name": "962教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 224,
+    "name": "963教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 225,
+    "name": "964教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 226,
+    "name": "965教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 227,
+    "name": "966教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 228,
+    "name": "967教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 229,
+    "name": "968教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 230,
+    "name": "971教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 231,
+    "name": "972教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 232,
+    "name": "973教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 233,
+    "name": "974教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 234,
+    "name": "975教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 235,
+    "name": "976教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 236,
+    "name": "977教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 237,
+    "name": "978教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 238,
+    "name": "979教室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 239,
+    "name": "ゼミ98A",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 240,
+    "name": "ゼミ98B",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 241,
+    "name": "ゼミ98C",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 242,
+    "name": "ゼミ98F",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 243,
+    "name": "書道室",
+    "building": "9号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 244,
+    "name": "ゼミ101H",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 245,
+    "name": "ゼミ101G",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 246,
+    "name": "ゼミ101F",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 247,
+    "name": "ゼミ101E",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 248,
+    "name": "ゼミ101D",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 249,
+    "name": "ゼミ101ｃ",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 250,
+    "name": "ゼミ101b",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 251,
+    "name": "ゼミ101A",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 252,
+    "name": "10103教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 253,
+    "name": "10102教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 254,
+    "name": "10101教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 255,
+    "name": "情報コアゾーン",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 256,
+    "name": "10215教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 257,
+    "name": "10208教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 258,
+    "name": "10207教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 259,
+    "name": "10206教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 260,
+    "name": "10205教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 261,
+    "name": "10204教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 262,
+    "name": "10210教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 263,
+    "name": "10211教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 264,
+    "name": "10212教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 265,
+    "name": "10213教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 266,
+    "name": "10214教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 267,
+    "name": "10203教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 268,
+    "name": "10202教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 269,
+    "name": "10201教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 270,
+    "name": "10209教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 271,
+    "name": "10310教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 272,
+    "name": "10311教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 273,
+    "name": "10312教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 274,
+    "name": "10313教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 275,
+    "name": "10314教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 276,
+    "name": "10309教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 277,
+    "name": "10308教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 278,
+    "name": "10307教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 279,
+    "name": "10306教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 280,
+    "name": "10305教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 281,
+    "name": "10315教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 282,
+    "name": "10304教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 283,
+    "name": "10303教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 284,
+    "name": "10302教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 285,
+    "name": "10301教室",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 286,
+    "name": "ゼミ105J",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 287,
+    "name": "ゼミ105I",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 288,
+    "name": "ゼミ105H",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 289,
+    "name": "ゼミ105G",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 290,
+    "name": "ゼミ105F",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 291,
+    "name": "ゼミ105E",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 292,
+    "name": "ゼミ105D",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 293,
+    "name": "ゼミ105C",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 294,
+    "name": "ゼミ105B",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 295,
+    "name": "ゼミ105A",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 296,
+    "name": "ゼミ105K",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 297,
+    "name": "ゼミ105L",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 298,
+    "name": "ゼミ105M",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 299,
+    "name": "ゼミ105N",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 300,
+    "name": "ゼミ105O",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 301,
+    "name": "ゼミ105P",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 302,
+    "name": "ゼミ105Q",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 303,
+    "name": "ゼミ105R",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 304,
+    "name": "ゼミ105S",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 305,
+    "name": "ゼミ105T",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 306,
+    "name": "ゼミ105U",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 307,
+    "name": "ゼミ105V",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 308,
+    "name": "ゼミ105W",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 309,
+    "name": "ゼミ105X",
+    "building": "10号館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 310,
+    "name": "柔道場",
+    "building": "総合体育館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 311,
+    "name": "卓球場",
+    "building": "総合体育館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 312,
+    "name": "トレーニング室",
+    "building": "総合体育館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 313,
+    "name": "アリーナ",
+    "building": "総合体育館",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 314,
+    "name": "テニスコート",
+    "building": "",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 315,
+    "name": "北グラウンド",
+    "building": "",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 316,
+    "name": "西グラウンド",
+    "building": "",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 317,
+    "name": "ゴルフ練習場",
+    "building": "",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 318,
+    "name": "第１体育館",
+    "building": "",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  },
+  {
+    "id": 319,
+    "name": "第２体育館",
+    "building": "",
+    "floor": "",
+    "capacity": "",
+    "feature": ""
+  }
 ]
