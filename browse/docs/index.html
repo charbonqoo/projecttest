@@ -1,102 +1,399 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <title>空き教室確認アプリ</title>
-  <style>
-    body { font-family: sans-serif; padding: 20px; }
-    select { margin-right: 10px; }
-    ul { list-style: none; padding-left: 0; }
-    li { margin-bottom: 6px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空き状況一覧</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Asapro2025_appNo1.css">
+    <script src="Asapro2025_appNo1.js"></script>
+    <!-- <script src="../index.js"></script> -->
 </head>
+
 <body>
-  <h1 id="title">空き教室一覧</h1>
+    <header>
+        <div class="header-container">
+            <img src="images/AsaproLogo.png" alt="あさぷろロゴ" class="logo">
+        </div>
+        <h1>空き教室一覧</h1>
+        <button class="filter-btn" id="openFilter"><img src="images/filter.png" alt="フィルター"
+                class="logo_filter"></button>
+    </header>
+    <section class="legend">
+        <span class="legend-blue">青：空き</span>
+        <span class="legend-red">赤：使用中</span>
+    </section>
+    <div>
 
-  <div>
-    <label for="weekday">曜日:</label>
-    <select id="weekday">
-      <option value="月">月</option>
-      <option value="火">火</option>
-      <option value="水">水</option>
-      <option value="木">木</option>
-      <option value="金">金</option>
-      <option value="土">土</option>
-    </select>
+    </div>
 
-    <label for="period">時限:</label>
-    <select id="period">
-      <option value="1">1限</option>
-      <option value="2">2限</option>
-      <option value="3">3限</option>
-      <option value="4">4限</option>
-      <option value="5">5限</option>
-    </select>
+    <ul id="classroom-list"></ul>
 
-    <label for="building">建物:</label>
-    <select id="building">
-      <option value="">すべて</option>
-      <option value="1号館">1号館</option>
-      <option value="2号館">2号館</option>
-      <option value="3号館">3号館</option>
-    </select>
+    <main class="building-list">
+        <button id="control1" class="building-item control" data-target="building1">1号館 <span
+                class="arrow">▼</span></button>
+        <div class="building-detail control" id="building1">
+            <p class="floor">1F</p>
+            <div class="rooms">
+            </div>
 
-    <button onclick="fetchByFilter()">検索</button>
-  </div>
+            <p class="floor">2F</p>
+            <div class="rooms">
+            </div>
 
-  <ul id="classroom-list"></ul>
+            <p class="floor">3F</p>
+            <div class="rooms">
 
-  <script>
-    async function fetchByFilter() {
-      const weekday = document.getElementById("weekday").value;
-      const period = document.getElementById("period").value;
-      const building = document.getElementById("building").value;
+            </div>
+        </div>
 
-      const url = new URL("/api/classrooms/available", window.location.origin);
-      url.searchParams.append("weekday", weekday);
-      url.searchParams.append("period", period);
-      if (building) url.searchParams.append("building", building);
+        <button id="control2" class="building-item control" data-target="building2">2号館 <span
+                class="arrow">▼</span></button>
+        <div class="building-detail control" id="building2">
 
-      const res = await fetch(url);
-      const data = await res.json();
+            <p class="floor">B1F</p>
+            <div class="rooms">
+            </div>
 
-      document.getElementById("title").textContent = `${weekday}曜 ${period}限 の空き教室`;
-      displayResults(data.results);
-    }
+            <p class="floor">1F</p>
+            <div class="rooms">
+            </div>
 
-    async function fetchCurrent() {
-      const res = await fetch("/api/classrooms/available/now");
-      const data = await res.json();
-      if (res.status === 204) {
-        document.getElementById("title").textContent = "授業時間外です";
-        document.getElementById("classroom-list").innerHTML = "";
-        return;
-      }
-      document.getElementById("weekday").value = data.weekday;
-      document.getElementById("period").value = data.period;
-      document.getElementById("building").value = "";
-      document.getElementById("title").textContent = `${data.weekday}曜 ${data.period}限 の空き教室`;
-      displayResults(data.results);
-    }
+            <p class="floor">2F</p>
+            <div class="rooms">
+            </div>
+        </div>
 
-    function displayResults(results) {
-      const list = document.getElementById("classroom-list");
-      list.innerHTML = "";
+        <button id="control3" class="building-item control" data-target="building3">3号館 <span
+                class="arrow">▼</span></button>
+        <div class="building-detail control" id="building3">
 
-      if (results.length === 0) {
-        list.innerHTML = "<li>空き教室はありません</li>";
-        return;
-      }
+            <p class="floor">3F</p>
+            <div class="rooms">
+            </div>
+        </div>
 
-      results.forEach(room => {
-        const item = document.createElement("li");
-        item.textContent = `${room.name}（${room.building}, 定員 ${room.capacity}人）`;
-        list.appendChild(item);
-      });
-    }
+        <button id="control4" class="building-item control" data-target="building4">4号館 <span
+                class="arrow">▼</span></button>
+        <div class="building-detail control" id="building4">
 
-    // ページロード時に現在の空き教室を表示
-    fetchCurrent();
-  </script>
+            <p class="floor">1F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">2F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">4F</p>
+            <div class="rooms">
+            </div>
+        </div>
+
+        <button id="control5" class="building-item control" data-target="building5">5号館 <span
+                class="arrow">▼</span></button>
+        <div class="building-detail control" id="building5">
+
+            <p class="floor">1F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">2F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">3F</p>
+            <div class="rooms">
+            </div>
+        </div>
+
+        <button id="control7" class="building-item control" data-target="building7">7号館 <span
+                class="arrow">▼</span></button>
+        <div class="building-detail control" id="building7">
+
+            <p class="floor">B1F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">1F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">2F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">3F</p>
+            <div class="rooms">
+            </div>
+        </div>
+
+        <button id="control8" class="building-item control" data-target="building8">8号館 <span
+                class="arrow">▼</span></button>
+        <div class="building-detail control" id="building8">
+
+            <p class="floor">1F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">2F</p>
+            <div class="rooms">
+            </div>
+        </div>
+
+        <button id="control9" class="building-item control" data-target="building9">9号館 <span
+                class="arrow">▼</span></button>
+        <div class="building-detail control" id="building9">
+
+            <p class="floor">4F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">5F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">6F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">7F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">8F</p>
+            <div class="rooms">
+            </div>
+        </div>
+
+        <button id="control10" class="building-item control" data-target="building10">10号館 <span
+                class="arrow">▼</span></button>
+        <div class="building-detail control" id="building10">
+
+            <p class="floor" data-floor="1F">1F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">2F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">3F</p>
+            <div class="rooms">
+            </div>
+
+            <p class="floor">5F</p>
+            <div class="rooms">
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <!-- フィルターモーダル -->
+    <div class="modal-bg" id="filterModal">
+        <div class="filter-modal">
+            <button class="close-btn" id="closeFilter"><img src="images/close.png" alt="閉じるボタン"
+                    class="logo_close"></button>
+            <h2>フィルタ</h2>
+
+            <label for="building">号館</label>
+            <select id="building">
+                <option value="all" >すべて</option>
+                <option value="1">1号館</option>
+                <option value="2">2号館</option>
+                <option value="3">3号館</option>
+                <option value="4">4号館</option>
+                <option value="5">5号館</option>
+                <option value="7">7号館</option>
+                <option value="8">8号館</option>
+                <option value="9">9号館</option>
+                <option value="10">10号館</option>
+            </select>
+            </label>
+
+            <label for="weekday">曜日</label>
+            <select id="weekday">
+                <option value="月曜">月</option>
+                <option value="火曜">火</option>
+                <option value="水曜">水</option>
+                <option value="木曜">木</option>
+                <option value="金曜">金</option>
+                <option value="土曜">土</option>
+            </select>
+            </label>
+
+            <label for="period">時限</label>
+            <select id="period">
+                <option value="1限">1限</option>
+                <option value="2限">2限</option>
+                <option value="3限">3限</option>
+                <option value="4限">4限</option>
+                <option value="5限">5限</option>
+                <option value="6限">6限</option>
+            </select>
+
+            <label class="checkbox-label">
+                <input type="checkbox" id="onlyAvailableCheckbox">
+                授業中の教室を非表示
+            </label>
+
+            <div class="filter-buttons">
+                <button class="clear-btn">全てクリア</button>
+                <button class="search-btn" id="search-btn" onclick="fetchByFilter()">検索</button>
+            </div>
+        </div>
+
+        <script>
+
+            function displayResults(results) {
+            // 既存の部屋表示をクリア
+            document.querySelectorAll(".room.blue, .room.red").forEach(el => el.remove());
+
+            results.forEach(room => {
+                const name = room.name;
+                const buildingId = room.building.replace("号館", "");
+                const floorLabel = room.floor + "F";
+
+                const buildingElem = document.getElementById("building" + buildingId);
+                if (!buildingElem) {
+                console.warn(`building${buildingId} が見つかりません`);
+                return;
+                }
+
+                const floorElems = buildingElem.querySelectorAll(".floor");
+                let targetRoomContainer = null;
+
+                floorElems.forEach(floorElem => {
+                if (floorElem.textContent.trim() === floorLabel) {
+                    targetRoomContainer = floorElem.nextElementSibling;
+                }
+                });
+
+                if (!targetRoomContainer) {
+                console.warn(`階層 ${floorLabel} の container が見つかりません`);
+                return;
+                }
+
+                const span = document.createElement("span");
+                span.classList.add("room");
+                span.classList.add(Number(room.available) === 0 ? "blue" : "red");
+                span.textContent = name;
+                targetRoomContainer.appendChild(span);
+            });
+
+            // チェックボックスの状態を確認して使用中の教室を非表示にする
+            const onlyAvailable = document.getElementById("onlyAvailableCheckbox").checked;
+            if (onlyAvailable) {
+                document.querySelectorAll(".room.red").forEach(el => {
+                el.style.display = "none";
+                });
+            }
+            }
+
+
+
+            async function fetchByFilter() {
+                const weekday = document.getElementById("weekday").value;
+                const period = document.getElementById("period").value;
+                const building = document.getElementById("building").value;
+            
+                const url = new URL("/api/classrooms/available", window.location.origin);
+                url.searchParams.append("weekday", weekday);
+                url.searchParams.append("period", period);
+                if (building) url.searchParams.append("building", building);
+                const res = await fetch(url);
+                const data = await res.json();
+                displayResults(data.results);
+
+
+                //号館フィルターの動作内容
+                const controls = document.getElementsByClassName("control");
+                for (const elem of controls) {
+                   elem.style.display = "none";
+                }
+                if (building == "all") {
+                    const buildingItems = document.getElementsByClassName("building-item");
+                    for (const elem of buildingItems) {
+                        elem.style.display = "flex";
+                    }
+                    const buildingDetails = document.getElementsByClassName("building-detail");
+                    for (const elem of buildingDetails) {
+                        elem.style.display = "block";
+                    }
+                }else if(building){
+                    document.getElementById("control" + building).style.display = "flex";
+                    document.getElementById("building" + building).style.display = "block";
+                }
+
+                //曜日、時間のフィルター動作
+                updateTitle(weekday + period);
+
+            }
+            
+            // ヘッダーに曜日と時限の表示
+            const weekdays = ["日曜", "月曜", "火曜", "水曜", "木曜", "金曜", "土曜"];
+
+            function isWithinRange(hour, minute, startHour, startMinute, endHour, endMinute) {
+                const now = hour * 60 + minute;
+                const start = startHour * 60 + startMinute;
+                const end = endHour * 60 + endMinute;
+                return now >= start && now <= end;
+            }
+
+            function getPeriod() {
+                const now = new Date();
+                const dayLabel = weekdays[now.getDay()];
+                const h = now.getHours();
+                const m = now.getMinutes();
+
+                let periodLabel = "時間外"; // デフォルト
+
+                if (isWithinRange(h, m, 9, 0, 10, 30)) {
+                    periodLabel = "１限";
+                } else if (isWithinRange(h, m, 10, 45, 12, 15)) {
+                    periodLabel = "２限";
+                } else if (isWithinRange(h, m, 12, 16, 13, 4)) {
+                    periodLabel = "昼休み";
+                } else if (isWithinRange(h, m, 13, 5, 14, 35)) {
+                    periodLabel = "３限";
+                } else if (isWithinRange(h, m, 14, 50, 16, 20)) {
+                    periodLabel = "４限";
+                } else if (isWithinRange(h, m, 16, 35, 18, 5)) {
+                    periodLabel = "５限";
+                } else if (isWithinRange(h, m, 18, 15, 19, 45)) {
+                    periodLabel = "６限";
+                } else if (
+                    isWithinRange(h, m, 10, 31, 10, 44) ||
+                    isWithinRange(h, m, 14, 36, 14, 49) ||
+                    isWithinRange(h, m, 16, 21, 16, 34) ||
+                    isWithinRange(h, m, 18, 6, 18, 14)
+                ) {
+                    periodLabel = "休憩時間";
+                }
+            
+                return `${dayLabel}${periodLabel}`;
+            }
+
+            // ヘッダーのタイトル更新
+            function updateTitle(time) {
+                const headerTitle = document.querySelector('header h1');
+                if (headerTitle) {
+                    headerTitle.textContent = time;
+                }
+            }
+            updateTitle(getPeriod());
+            setInterval(updateTitle(getPeriod()), 60000);
+
+
+            
+            // ページロード時に現在の空き教室を表示
+        
+        </script>
 </body>
+
 </html>
