@@ -346,38 +346,43 @@
             }
 
             function getPeriod() {
+                const weekdays = ["日曜", "月曜", "火曜", "水曜", "木曜", "金曜", "土曜"];
                 const now = new Date();
                 const dayLabel = weekdays[now.getDay()];
                 const h = now.getHours();
                 const m = now.getMinutes();
 
-                let periodLabel = "時間外"; // デフォルト
+                const minutes = h * 60 + m;
 
-                if (isWithinRange(h, m, 9, 0, 10, 30)) {
-                    periodLabel = "１限";
-                } else if (isWithinRange(h, m, 10, 45, 12, 15)) {
-                    periodLabel = "２限";
-                } else if (isWithinRange(h, m, 12, 16, 13, 4)) {
-                    periodLabel = "昼休み";
-                } else if (isWithinRange(h, m, 13, 5, 14, 35)) {
-                    periodLabel = "３限";
-                } else if (isWithinRange(h, m, 14, 50, 16, 20)) {
-                    periodLabel = "４限";
-                } else if (isWithinRange(h, m, 16, 35, 18, 5)) {
-                    periodLabel = "５限";
-                } else if (isWithinRange(h, m, 18, 15, 19, 45)) {
-                    periodLabel = "６限";
-                } else if (
-                    isWithinRange(h, m, 10, 31, 10, 44) ||
-                    isWithinRange(h, m, 14, 36, 14, 49) ||
-                    isWithinRange(h, m, 16, 21, 16, 34) ||
-                    isWithinRange(h, m, 18, 6, 18, 14)
-                ) {
-                    periodLabel = "休憩時間";
+                // 各時限の時間帯（開始分、終了分、表示ラベル）
+                const periods = [
+                    { start: 540, end: 630, label: "1限" },   // 9:00 - 10:30
+                    { start: 645, end: 735, label: "2限" },   // 10:45 - 12:15
+                    { start: 785, end: 875, label: "3限" },   // 13:05 - 14:35
+                    { start: 890, end: 980, label: "4限" },   // 14:50 - 16:20
+                    { start: 995, end: 1085, label: "5限" },  // 16:35 - 18:05
+                    { start: 1095, end: 1185, label: "6限" }, // 18:15 - 19:45
+                ];
+
+                for (let i = 0; i < periods.length; i++) {
+                    if (minutes >= periods[i].start && minutes <= periods[i].end) {
+                        return `${dayLabel}${periods[i].label}`;
+                    }
                 }
-            
-                return `${dayLabel}${periodLabel}`;
+
+                // 授業時間外または休憩中：次の授業時間を返す
+                for (let i = 0; i < periods.length; i++) {
+                    if (minutes < periods[i].start) {
+                        return `${dayLabel}${periods[i].label}`;  // 次の時限
+                    }
+                }
+
+                // 授業終了後は翌日の1限を表示
+                const nextDay = weekdays[(now.getDay() + 1) % 7];
+                return `${nextDay}1限`;
             }
+
+
 
             // ヘッダーのタイトル更新
             function updateTitle(time) {
@@ -392,7 +397,23 @@
 
             
             // ページロード時に現在の空き教室を表示
-        
+            window.addEventListener("DOMContentLoaded", () => {
+            // getPeriod() から "月曜1限" などを取得し、weekday・period を分離して代入
+            const nowPeriod = getPeriod(); // 例: "月曜1限"
+            const weekday = nowPeriod.slice(0, 2); // 例: "月"
+            const period = nowPeriod.slice(2);    // 例: "1限"
+
+            // セレクトボックスに値をセット
+            document.getElementById("weekday").value = weekday; // → "月曜"
+            document.getElementById("period").value = period;          // → "1限"
+
+            // 建物は "all" を選択して全表示
+            document.getElementById("building").value = "all";
+
+            // 教室一覧を表示
+            fetchByFilter();
+            });
+
         </script>
 </body>
 

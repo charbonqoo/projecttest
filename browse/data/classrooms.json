@@ -2035,7 +2035,7 @@
     "id": 255,
     "name": "情報コアゾーン",
     "building": "10号館",
-    "floor": "",
+    "floor": "1",
     "capacity": "",
     "feature": ""
   },
@@ -2043,7 +2043,7 @@
     "id": 256,
     "name": "10215教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2051,7 +2051,7 @@
     "id": 257,
     "name": "10208教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2059,7 +2059,7 @@
     "id": 258,
     "name": "10207教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2067,7 +2067,7 @@
     "id": 259,
     "name": "10206教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2075,7 +2075,7 @@
     "id": 260,
     "name": "10205教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2083,7 +2083,7 @@
     "id": 261,
     "name": "10204教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2099,7 +2099,7 @@
     "id": 263,
     "name": "10211教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2107,7 +2107,7 @@
     "id": 264,
     "name": "10212教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2115,7 +2115,7 @@
     "id": 265,
     "name": "10213教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2123,7 +2123,7 @@
     "id": 266,
     "name": "10214教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2131,7 +2131,7 @@
     "id": 267,
     "name": "10203教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2139,7 +2139,7 @@
     "id": 268,
     "name": "10202教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2147,7 +2147,7 @@
     "id": 269,
     "name": "10201教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2155,7 +2155,7 @@
     "id": 270,
     "name": "10209教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "2",
     "capacity": "",
     "feature": ""
   },
@@ -2163,7 +2163,7 @@
     "id": 271,
     "name": "10310教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2171,7 +2171,7 @@
     "id": 272,
     "name": "10311教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2179,7 +2179,7 @@
     "id": 273,
     "name": "10312教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2187,7 +2187,7 @@
     "id": 274,
     "name": "10313教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2195,7 +2195,7 @@
     "id": 275,
     "name": "10314教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2203,7 +2203,7 @@
     "id": 276,
     "name": "10309教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2211,7 +2211,7 @@
     "id": 277,
     "name": "10308教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2219,7 +2219,7 @@
     "id": 278,
     "name": "10307教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2227,7 +2227,7 @@
     "id": 279,
     "name": "10306教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2235,7 +2235,7 @@
     "id": 280,
     "name": "10305教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2243,7 +2243,7 @@
     "id": 281,
     "name": "10315教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2251,7 +2251,7 @@
     "id": 282,
     "name": "10304教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2259,7 +2259,7 @@
     "id": 283,
     "name": "10303教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2267,7 +2267,7 @@
     "id": 284,
     "name": "10302教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2275,7 +2275,7 @@
     "id": 285,
     "name": "10301教室",
     "building": "10号館",
-    "floor": "",
+    "floor": "3",
     "capacity": "",
     "feature": ""
   },
@@ -2283,7 +2283,7 @@
     "id": 286,
     "name": "ゼミ105J",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2291,7 +2291,7 @@
     "id": 287,
     "name": "ゼミ105I",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2299,7 +2299,7 @@
     "id": 288,
     "name": "ゼミ105H",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2307,7 +2307,7 @@
     "id": 289,
     "name": "ゼミ105G",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2315,7 +2315,7 @@
     "id": 290,
     "name": "ゼミ105F",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2323,7 +2323,7 @@
     "id": 291,
     "name": "ゼミ105E",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2331,7 +2331,7 @@
     "id": 292,
     "name": "ゼミ105D",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2339,7 +2339,7 @@
     "id": 293,
     "name": "ゼミ105C",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2347,7 +2347,7 @@
     "id": 294,
     "name": "ゼミ105B",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2355,7 +2355,7 @@
     "id": 295,
     "name": "ゼミ105A",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2363,7 +2363,7 @@
     "id": 296,
     "name": "ゼミ105K",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2371,7 +2371,7 @@
     "id": 297,
     "name": "ゼミ105L",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2379,7 +2379,7 @@
     "id": 298,
     "name": "ゼミ105M",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2387,7 +2387,7 @@
     "id": 299,
     "name": "ゼミ105N",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2395,7 +2395,7 @@
     "id": 300,
     "name": "ゼミ105O",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2403,7 +2403,7 @@
     "id": 301,
     "name": "ゼミ105P",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2411,7 +2411,7 @@
     "id": 302,
     "name": "ゼミ105Q",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2419,7 +2419,7 @@
     "id": 303,
     "name": "ゼミ105R",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2427,7 +2427,7 @@
     "id": 304,
     "name": "ゼミ105S",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2435,7 +2435,7 @@
     "id": 305,
     "name": "ゼミ105T",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2443,7 +2443,7 @@
     "id": 306,
     "name": "ゼミ105U",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2451,7 +2451,7 @@
     "id": 307,
     "name": "ゼミ105V",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2459,7 +2459,7 @@
     "id": 308,
     "name": "ゼミ105W",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },
@@ -2467,7 +2467,7 @@
     "id": 309,
     "name": "ゼミ105X",
     "building": "10号館",
-    "floor": "",
+    "floor": "5",
     "capacity": "",
     "feature": ""
   },

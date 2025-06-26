@@ -278,7 +278,8 @@ select.filled {
 }
 
 .room.red {
-    background: #f2c5c9;
+    background: #bd8f91;
+    /* f2c5c9 元の色*/
     color: #7a2b2b;
 }
 
