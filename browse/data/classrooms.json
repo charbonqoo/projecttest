@@ -115,7 +115,7 @@
     "id": 15,
     "name": "ラボ1",
     "building": "1号館",
-    "floor": "",
+    "floor": "1",
     "capacity": "",
     "feature": ""
   },
