@@ -2035,7 +2035,7 @@
     "id": 255,
     "name": "情報コアゾーン",
     "building": "10号館",
-    "floor": "1",
+    "floor": "",
     "capacity": "",
     "feature": ""
   },
