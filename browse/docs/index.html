@@ -354,13 +354,18 @@
             function getPeriod() {
                 const weekdays = ["日曜", "月曜", "火曜", "水曜", "木曜", "金曜", "土曜"];
                 const now = new Date();
-                const dayLabel = weekdays[now.getDay()];
+                const dayIndex = now.getDay();
+
+                // 日曜は強制的に「月曜1限」を返す
+                if (dayIndex === 0) {
+                    return "月曜1限";
+                }
+
+                const dayLabel = weekdays[dayIndex];
                 const h = now.getHours();
                 const m = now.getMinutes();
-
                 const minutes = h * 60 + m;
 
-                // 各時限の時間帯（開始分、終了分、表示ラベル）
                 const periods = [
                     { start: 540, end: 630, label: "1限" },   // 9:00 - 10:30
                     { start: 645, end: 735, label: "2限" },   // 10:45 - 12:15
@@ -376,18 +381,18 @@
                     }
                 }
 
-                // 授業時間外または休憩中：次の授業時間を返す
                 for (let i = 0; i < periods.length; i++) {
                     if (minutes < periods[i].start) {
-                        return `${dayLabel}${periods[i].label}`;  // 次の時限
+                        return `${dayLabel}${periods[i].label}`;
                     }
                 }
 
-                // 授業終了後は翌日の1限を表示
-                const nextDay = weekdays[(now.getDay() + 1) % 7];
-                return `${nextDay}1限`;
-            }
+                // 授業終了後は次の日の1限
+                const nextDayIndex = (dayIndex + 1) % 7;
+                const nextDayLabel = weekdays[nextDayIndex === 0 ? 1 : nextDayIndex]; // 日曜はスキップして月曜
 
+                return `${nextDayLabel}1限`;
+            }
 
 
             // ヘッダーのタイトル更新
