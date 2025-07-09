@@ -41,8 +41,13 @@ h2 {
 p { 
     font-size: 0.8rem;
     color: #5a7753;
-    text-align: center;
 
+}
+
+p#note{
+    font-size: 0.8rem;
+    color: #5a7753;
+    text-align: center;
 }
 
 .filter-btn {
