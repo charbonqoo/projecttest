@@ -35,6 +35,7 @@
         <button id="control1" class="building-item control" data-target="building1">1号館 <span
                 class="arrow">▼</span></button>
         <div class="building-detail control" id="building1">
+            <button onclick="location.href='asakaproject2023-main/index.html'" id="1-B1_map">フロアマップ</button>
             <p class="floor">B1F</p>
             <div class="rooms">
             </div>
@@ -407,20 +408,20 @@
             
             // ページロード時に現在の空き教室を表示
             window.addEventListener("DOMContentLoaded", () => {
-            // getPeriod() から "月曜1限" などを取得し、weekday・period を分離して代入
-            const nowPeriod = getPeriod(); // 例: "月曜1限"
-            const weekday = nowPeriod.slice(0, 2); // 例: "月"
-            const period = nowPeriod.slice(2);    // 例: "1限"
+                // getPeriod() から "月曜1限" などを取得し、weekday・period を分離して代入
+                const nowPeriod = getPeriod(); // 例: "月曜1限"
+                const weekday = nowPeriod.slice(0, 2); // 例: "月"
+                const period = nowPeriod.slice(2);    // 例: "1限"
 
-            // セレクトボックスに値をセット
-            document.getElementById("weekday").value = weekday; // → "月曜"
-            document.getElementById("period").value = period;          // → "1限"
+                // セレクトボックスに値をセット
+                document.getElementById("weekday").value = weekday; // → "月曜"
+                document.getElementById("period").value = period;          // → "1限"
 
-            // 建物は "all" を選択して全表示
-            document.getElementById("building").value = "all";
+                // 建物は "all" を選択して全表示
+                document.getElementById("building").value = "all";
 
-            // 教室一覧を表示
-            fetchByFilter();
+                // 教室一覧を表示
+                fetchByFilter();
             });
 
         </script>
